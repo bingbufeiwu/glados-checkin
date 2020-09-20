@@ -22,3 +22,5 @@
 3、每天进行checkin一次，增加一天。
 
 详细使用说明，请阅读[readme](doc/readme.md)
+
+
