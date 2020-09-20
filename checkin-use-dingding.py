@@ -43,6 +43,8 @@ def start():
 """
             print(msg)
             push2ding(token, title, msg)
+        else:
+            print(msg)
     else:
         #requests.get('https://sc.ftqq.com/' + sckey + '.send?text=cookie过期')
         title = 'checkin error'
@@ -51,7 +53,9 @@ def start():
 > cookie过期
 
 """
-        push2ding(token, title, msg)
+        print(msg)
+        if server == 'on':
+            push2ding(token, title, msg)
 
 def main_handler(event, context):
   return start()
